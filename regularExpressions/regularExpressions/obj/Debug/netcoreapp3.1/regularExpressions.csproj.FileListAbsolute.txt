@@ -1,0 +1,13 @@
+C:\Users\xxx-1\Desktop\lab5\regularExpressions\regularExpressions\bin\Debug\netcoreapp3.1\regularExpressions.exe
+C:\Users\xxx-1\Desktop\lab5\regularExpressions\regularExpressions\bin\Debug\netcoreapp3.1\regularExpressions.deps.json
+C:\Users\xxx-1\Desktop\lab5\regularExpressions\regularExpressions\bin\Debug\netcoreapp3.1\regularExpressions.runtimeconfig.json
+C:\Users\xxx-1\Desktop\lab5\regularExpressions\regularExpressions\bin\Debug\netcoreapp3.1\regularExpressions.runtimeconfig.dev.json
+C:\Users\xxx-1\Desktop\lab5\regularExpressions\regularExpressions\bin\Debug\netcoreapp3.1\regularExpressions.dll
+C:\Users\xxx-1\Desktop\lab5\regularExpressions\regularExpressions\bin\Debug\netcoreapp3.1\regularExpressions.pdb
+C:\Users\xxx-1\Desktop\lab5\regularExpressions\regularExpressions\obj\Debug\netcoreapp3.1\regularExpressions.csprojAssemblyReference.cache
+C:\Users\xxx-1\Desktop\lab5\regularExpressions\regularExpressions\obj\Debug\netcoreapp3.1\regularExpressions.AssemblyInfoInputs.cache
+C:\Users\xxx-1\Desktop\lab5\regularExpressions\regularExpressions\obj\Debug\netcoreapp3.1\regularExpressions.AssemblyInfo.cs
+C:\Users\xxx-1\Desktop\lab5\regularExpressions\regularExpressions\obj\Debug\netcoreapp3.1\regularExpressions.csproj.CoreCompileInputs.cache
+C:\Users\xxx-1\Desktop\lab5\regularExpressions\regularExpressions\obj\Debug\netcoreapp3.1\regularExpressions.dll
+C:\Users\xxx-1\Desktop\lab5\regularExpressions\regularExpressions\obj\Debug\netcoreapp3.1\regularExpressions.pdb
+C:\Users\xxx-1\Desktop\lab5\regularExpressions\regularExpressions\obj\Debug\netcoreapp3.1\regularExpressions.genruntimeconfig.cache

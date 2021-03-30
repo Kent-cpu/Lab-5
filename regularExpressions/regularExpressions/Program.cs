@@ -6,6 +6,7 @@ namespace regularExpressions
 {
     class Program
     {
+        //Прив меня завут Жека, мой намер телефона
         static void Main(string[] args)
         {
             List<List<string>> wrongWords = new List<List<string>>();
@@ -16,7 +17,7 @@ namespace regularExpressions
                 string bufText;
                 while ((bufText = file.ReadLine()) != null)
                 {
-                    string[] words = bufText.Split(' ');
+                    string[] words = bufText.Split('#');
                     List<string> wordsLine = new List<string>();
                     for (int el = 0; el < words.Length; ++el)
                     {
@@ -29,11 +30,21 @@ namespace regularExpressions
             Console.Write("Введите путь: ");
             path = Console.ReadLine();
 
-            using (FileStream file = new FileStream(path, FileMode.Open))
+            using (StreamReader file = new StreamReader(path))
             {
-                byte[] array = new byte[file.Length];
-                file.Read(array, 0, array.Length);
-                text = System.Text.Encoding.Default.GetString(array);
+                text = file.ReadToEnd().ToLower();
+                for (int i = 0; i < wrongWords.Count; ++i)
+                {
+                    for (int j = 0; j < wrongWords[i].Count; ++j)
+                    {
+                        text = text.Replace(wrongWords[i][j], wrongWords[i][0]);
+                    }
+                }
+            }
+
+            using (StreamWriter sw = new StreamWriter(path, false, System.Text.Encoding.Default))
+            {
+                sw.Write(text);
             }
         }
     }
