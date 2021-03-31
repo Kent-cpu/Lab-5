@@ -1,12 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace regularExpressions
 {
     class Program
     {
-        //Прив меня завут Жека, мой намер телефона
+        //прив меня завут Жека, мой намер телефона (012) 345-67-89
         static void Main(string[] args)
         {
             List<List<string>> wrongWords = new List<List<string>>();
@@ -32,6 +33,8 @@ namespace regularExpressions
 
             using (StreamReader file = new StreamReader(path))
             {
+                Regex regex = new Regex(@"(\(\d(\d{2})\) (\d{3}-\d{2}-\d{2}))");
+                string phone_number = "+380 12 345 67 89";
                 text = file.ReadToEnd().ToLower();
                 for (int i = 0; i < wrongWords.Count; ++i)
                 {
@@ -40,12 +43,13 @@ namespace regularExpressions
                         text = text.Replace(wrongWords[i][j], wrongWords[i][0]);
                     }
                 }
+                text = regex.Replace(text, phone_number);
             }
-
+      
             using (StreamWriter sw = new StreamWriter(path, false, System.Text.Encoding.Default))
             {
                 sw.Write(text);
             }
         }
-    }
+    } 
 }
